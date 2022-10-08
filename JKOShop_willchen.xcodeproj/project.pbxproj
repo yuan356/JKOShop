@@ -10,7 +10,6 @@
 		1C51DD3928F1C73F00801A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DD3828F1C73F00801A7E /* AppDelegate.swift */; };
 		1C51DD3B28F1C73F00801A7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DD3A28F1C73F00801A7E /* SceneDelegate.swift */; };
 		1C51DD3D28F1C73F00801A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DD3C28F1C73F00801A7E /* ViewController.swift */; };
-		1C51DD4028F1C73F00801A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DD3E28F1C73F00801A7E /* Main.storyboard */; };
 		1C51DD4228F1C74900801A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DD4128F1C74900801A7E /* Assets.xcassets */; };
 		1C51DD4528F1C74900801A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DD4328F1C74900801A7E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		1C51DD3828F1C73F00801A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C51DD3A28F1C73F00801A7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C51DD3C28F1C73F00801A7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C51DD3F28F1C73F00801A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C51DD4128F1C74900801A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C51DD4428F1C74900801A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C51DD4628F1C74900801A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,22 @@
 		1C51DD3728F1C73F00801A7E /* JKOShop_willchen */ = {
 			isa = PBXGroup;
 			children = (
-				1C51DD3828F1C73F00801A7E /* AppDelegate.swift */,
-				1C51DD3A28F1C73F00801A7E /* SceneDelegate.swift */,
+				1C51DD4F28F1C80500801A7E /* SupportingFiles */,
 				1C51DD3C28F1C73F00801A7E /* ViewController.swift */,
-				1C51DD3E28F1C73F00801A7E /* Main.storyboard */,
 				1C51DD4128F1C74900801A7E /* Assets.xcassets */,
-				1C51DD4328F1C74900801A7E /* LaunchScreen.storyboard */,
-				1C51DD4628F1C74900801A7E /* Info.plist */,
 			);
 			path = JKOShop_willchen;
+			sourceTree = "<group>";
+		};
+		1C51DD4F28F1C80500801A7E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1C51DD4328F1C74900801A7E /* LaunchScreen.storyboard */,
+				1C51DD4628F1C74900801A7E /* Info.plist */,
+				1C51DD3828F1C73F00801A7E /* AppDelegate.swift */,
+				1C51DD3A28F1C73F00801A7E /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +131,6 @@
 			files = (
 				1C51DD4528F1C74900801A7E /* LaunchScreen.storyboard in Resources */,
 				1C51DD4228F1C74900801A7E /* Assets.xcassets in Resources */,
-				1C51DD4028F1C73F00801A7E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C51DD3E28F1C73F00801A7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C51DD3F28F1C73F00801A7E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C51DD4328F1C74900801A7E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +284,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93H5743QJF;
-				INFOPLIST_FILE = JKOShop_willchen/Info.plist;
+				INFOPLIST_FILE = JKOShop_willchen/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +303,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93H5743QJF;
-				INFOPLIST_FILE = JKOShop_willchen/Info.plist;
+				INFOPLIST_FILE = JKOShop_willchen/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
