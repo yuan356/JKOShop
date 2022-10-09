@@ -7,11 +7,12 @@
 
 import UIKit
 import Shop
+import History
 
 class JKSTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let shopVC = ShopViewController()
+        let shopVC = UINavigationController(rootViewController: ShopViewController())
         let firstBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
         
         shopVC.tabBarItem = firstBarItem

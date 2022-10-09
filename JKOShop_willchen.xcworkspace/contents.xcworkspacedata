@@ -6,9 +6,26 @@
    </FileRef>
    <Group
       location = "container:"
+      name = "Common">
+      <FileRef
+         location = "group:Helper/Helper.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Service/Service.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Features">
       <FileRef
          location = "group:Shop/Shop.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Models">
+      <FileRef
+         location = "group:Models/Models.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>
