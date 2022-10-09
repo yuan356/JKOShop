@@ -11,6 +11,7 @@
 		1C51DDFE28F27CF800801A7E /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DDFD28F27CF800801A7E /* ItemModel.swift */; };
 		1C51DE0328F27D5B00801A7E /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DE0228F27D5B00801A7E /* OrderModel.swift */; };
 		1C51DE0628F27D6200801A7E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DE0528F27D6200801A7E /* DataModel.swift */; };
+		1CF1A90F28F2C685005FD2B2 /* CartItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A90E28F2C685005FD2B2 /* CartItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		1C51DDFD28F27CF800801A7E /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		1C51DE0228F27D5B00801A7E /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderModel.swift; path = Models/Models/OrderModel.swift; sourceTree = SOURCE_ROOT; };
 		1C51DE0528F27D6200801A7E /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		1CF1A90E28F2C685005FD2B2 /* CartItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				1C51DE0528F27D6200801A7E /* DataModel.swift */,
 				1C51DE0228F27D5B00801A7E /* OrderModel.swift */,
 				1C51DDFD28F27CF800801A7E /* ItemModel.swift */,
+				1CF1A90E28F2C685005FD2B2 /* CartItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C51DE0328F27D5B00801A7E /* OrderModel.swift in Sources */,
+				1CF1A90F28F2C685005FD2B2 /* CartItemModel.swift in Sources */,
 				1C51DDFE28F27CF800801A7E /* ItemModel.swift in Sources */,
 				1C51DE0628F27D6200801A7E /* DataModel.swift in Sources */,
 			);

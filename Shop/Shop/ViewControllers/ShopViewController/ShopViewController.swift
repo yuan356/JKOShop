@@ -9,17 +9,25 @@ import UIKit
 import Service
 import Helper
 import Models
+import ViewModel
 
 public class ShopViewController: UIViewController {
 
     @IBOutlet weak var itemTableView: UITableView!
         
-    private var items: [ItemModel] = []
+    private var items: [ItemModel] {
+        return itemViewModel.items.value ?? []
+    }
+    
+    private let itemViewModel = ItemViewModel()
     
     override public func viewDidLoad() {
         super.viewDidLoad()
         title = "商品列表"
-        items = ItemService().getItems()
+        itemViewModel.items.bind { [weak self] (items) in
+            self?.itemTableView.reloadData()
+        }
+        itemViewModel.getItems()
         setupTableView()
     }
     

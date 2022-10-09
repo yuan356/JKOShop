@@ -7,17 +7,22 @@
 
 import UIKit
 import Shop
+import Cart
 import History
 
 class JKSTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let shopVC = UINavigationController(rootViewController: ShopViewController())
-        let firstBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
+        let shopBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
+        shopVC.tabBarItem = shopBarItem
         
-        shopVC.tabBarItem = firstBarItem
+        let cartVC = CartViewController()
+        let cartBarItem = UITabBarItem(title: "Cart", image: UIImage(systemName: "cart"), selectedImage: UIImage(named: "cart.fill"))
+        cartVC.tabBarItem = cartBarItem
+        
         
         self.tabBar.tintColor = UIColor(named: "JKORed")
-        self.viewControllers = [shopVC]
+        self.viewControllers = [shopVC, cartVC]
     }
 }

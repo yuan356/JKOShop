@@ -18,7 +18,17 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:Cart/Cart.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Shop/Shop.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "ViewModel">
+      <FileRef
+         location = "group:ViewModel/ViewModel.xcodeproj">
       </FileRef>
    </Group>
    <Group

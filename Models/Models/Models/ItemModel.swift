@@ -15,3 +15,13 @@ public struct ItemModel: Decodable {
     let createdTime: String
     public let imageUrl: String
 }
+
+protocol IntConvertable {
+    func toInt() -> Int
+}
+
+extension Double: IntConvertable {
+    public func toInt() -> Int {
+        return Int(self)
+    }
+}

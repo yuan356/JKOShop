@@ -7,6 +7,7 @@
 
 import UIKit
 import Models
+import ViewModel
 
 class ItemDetailViewController: UIViewController {
 
@@ -18,6 +19,8 @@ class ItemDetailViewController: UIViewController {
     @IBOutlet weak var buyBtnView: UIView!
     
     var item: ItemModel!
+    
+    var cartViewModel = CartViewModel()
     
     public init() {
         super.init(nibName: String(describing: ItemDetailViewController.self), bundle: Bundle(for: type(of: self)))
@@ -52,7 +55,11 @@ class ItemDetailViewController: UIViewController {
 extension ItemDetailViewController {
     
     @IBAction func addToCartClicked(_ sender: Any) {
-        
+        cartViewModel.addToCart(item: item)
+        let controller = UIAlertController(title: "成功加入購物車", message: item.title, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        controller.addAction(okAction)
+        present(controller, animated: true, completion: nil)
     }
     
     @IBAction func buyNowClicked(_ sender: Any) {

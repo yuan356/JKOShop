@@ -10,30 +10,11 @@
 		1C51DDCB28F1CF5000801A7E /* Shop.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C51DDC928F1CF5000801A7E /* Shop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C51DDDB28F1D08200801A7E /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DDD928F1D08200801A7E /* ShopViewController.swift */; };
 		1C51DDDC28F1D08200801A7E /* ShopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DDDA28F1D08200801A7E /* ShopViewController.xib */; };
-		1C51DE3128F28C6100801A7E /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DE3028F28C6100801A7E /* Service.framework */; };
-		1C51DE3228F28C6100801A7E /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DE3028F28C6100801A7E /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C51DE5A28F2912100801A7E /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C51DE5828F2912100801A7E /* ItemCell.swift */; };
 		1C51DE5B28F2912100801A7E /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DE5928F2912100801A7E /* ItemCell.xib */; };
-		1CF1A87C28F2A241005FD2B2 /* Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF1A87B28F2A241005FD2B2 /* Helper.framework */; };
-		1CF1A87D28F2A241005FD2B2 /* Helper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF1A87B28F2A241005FD2B2 /* Helper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CF1A8A328F2AEF7005FD2B2 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A8A128F2AEF7005FD2B2 /* ItemDetailViewController.swift */; };
 		1CF1A8A428F2AEF7005FD2B2 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1A8A228F2AEF7005FD2B2 /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1C51DE3328F28C6100801A7E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1CF1A87D28F2A241005FD2B2 /* Helper.framework in Embed Frameworks */,
-				1C51DE3228F28C6100801A7E /* Service.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C51DDC628F1CF5000801A7E /* Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +30,7 @@
 		1CF1A87B28F2A241005FD2B2 /* Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF1A8A128F2AEF7005FD2B2 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		1CF1A8A228F2AEF7005FD2B2 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
+		1CF1A90A28F2C348005FD2B2 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF1A87C28F2A241005FD2B2 /* Helper.framework in Frameworks */,
-				1C51DE3128F28C6100801A7E /* Service.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +92,7 @@
 		1C51DE2F28F28C6100801A7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1CF1A90A28F2C348005FD2B2 /* ViewModel.framework */,
 				1CF1A87B28F2A241005FD2B2 /* Helper.framework */,
 				1CF1A87528F29EFE005FD2B2 /* Helper.framework */,
 				1C51DE5428F2905C00801A7E /* Extension.framework */,
@@ -177,7 +158,6 @@
 				1C51DDC228F1CF5000801A7E /* Sources */,
 				1C51DDC328F1CF5000801A7E /* Frameworks */,
 				1C51DDC428F1CF5000801A7E /* Resources */,
-				1C51DE3328F28C6100801A7E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
