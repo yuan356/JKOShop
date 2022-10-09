@@ -3,25 +3,34 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="CartItemCell" customModule="Cart" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="CartItemCell" customModule="Cart" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YbB-rM-OxE">
+                        <rect key="frame" x="8" y="35.5" width="20" height="19"/>
+                        <color key="tintColor" name="JKORed"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1jb-2G-sm3"/>
+                            <constraint firstAttribute="width" constant="20" id="lHb-aq-Hkg"/>
+                        </constraints>
+                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUi-y7-Iuz">
-                        <rect key="frame" x="16" y="5" width="311" height="80"/>
+                        <rect key="frame" x="30" y="5" width="297" height="80"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlC-Xf-WKv">
-                                <rect key="frame" x="92" y="16" width="199" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="92" y="16" width="185" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,14 +42,22 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-hi-myA">
-                                <rect key="frame" x="262.5" y="42.5" width="32.5" height="21.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="250" y="43.5" width="31" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-ZW-gVW">
+                                <rect key="frame" x="92" y="52" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fXC-ZW-gVW" secondAttribute="bottom" constant="12" id="8jV-eR-c7w"/>
+                            <constraint firstItem="fXC-ZW-gVW" firstAttribute="leading" secondItem="dlC-Xf-WKv" secondAttribute="leading" id="DAE-pe-rmw"/>
                             <constraint firstItem="zDO-QH-k7V" firstAttribute="leading" secondItem="tUi-y7-Iuz" secondAttribute="leading" constant="16" id="DjS-ud-V8c"/>
                             <constraint firstAttribute="trailing" secondItem="dlC-Xf-WKv" secondAttribute="trailing" constant="20" id="IxQ-YA-HUt"/>
                             <constraint firstAttribute="bottom" secondItem="Oe4-hi-myA" secondAttribute="bottom" constant="16" id="P3h-vF-zFd"/>
@@ -55,15 +72,19 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="tUi-y7-Iuz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2Xo-1V-IHy"/>
+                    <constraint firstItem="YbB-rM-OxE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2aw-4R-cy2"/>
                     <constraint firstAttribute="trailing" secondItem="tUi-y7-Iuz" secondAttribute="trailing" constant="16" id="F28-IN-RkZ"/>
                     <constraint firstAttribute="bottom" secondItem="tUi-y7-Iuz" secondAttribute="bottom" constant="5" id="I4u-ty-SjI"/>
-                    <constraint firstItem="tUi-y7-Iuz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xLm-Pd-JJY"/>
+                    <constraint firstItem="YbB-rM-OxE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jlr-AB-d4S"/>
+                    <constraint firstItem="tUi-y7-Iuz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="xLm-Pd-JJY"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="amountLabel" destination="Oe4-hi-myA" id="Zcm-3N-VyH"/>
+                <outlet property="checkImage" destination="YbB-rM-OxE" id="cYP-RW-xQu"/>
+                <outlet property="countLabel" destination="fXC-ZW-gVW" id="ipN-AS-DWt"/>
                 <outlet property="innerView" destination="tUi-y7-Iuz" id="mPd-KS-Gxa"/>
                 <outlet property="itemImage" destination="zDO-QH-k7V" id="hFD-EI-lCa"/>
                 <outlet property="titleLabel" destination="dlC-Xf-WKv" id="39Q-H1-LNB"/>
@@ -71,4 +92,10 @@
             <point key="canvasLocation" x="145.6521739130435" y="89.0625"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <namedColor name="JKORed">
+            <color red="0.78799998760223389" green="0.097999997437000275" blue="0.11400000005960464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

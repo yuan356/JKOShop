@@ -57,7 +57,9 @@ extension ItemDetailViewController {
     @IBAction func addToCartClicked(_ sender: Any) {
         cartViewModel.addToCart(item: item)
         let controller = UIAlertController(title: "成功加入購物車", message: item.title, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
         controller.addAction(okAction)
         present(controller, animated: true, completion: nil)
     }

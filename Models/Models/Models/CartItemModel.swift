@@ -7,9 +7,17 @@
 
 import Foundation
 
-public struct CartItemModel {
+protocol Calculable {
+    var totalAmount: Int { get }
+}
+
+public struct CartItemModel: Calculable {
+    
     public var item: ItemModel
     public var count: Int
+    public var totalAmount: Int {
+        return Int(item.amount) * count
+    }
     
     public init (item: ItemModel) {
         self.item = item
