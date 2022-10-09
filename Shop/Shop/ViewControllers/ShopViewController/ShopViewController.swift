@@ -13,9 +13,7 @@ import Models
 public class ShopViewController: UIViewController {
 
     @IBOutlet weak var itemTableView: UITableView!
-    
-    private let shopBundle: Bundle = Bundle(for: ShopViewController.self)
-    
+        
     private var items: [ItemModel] = []
     
     override public func viewDidLoad() {
@@ -29,11 +27,11 @@ public class ShopViewController: UIViewController {
         itemTableView.backgroundColor = UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
         itemTableView.delegate = self
         itemTableView.dataSource = self
-        itemTableView.registerCell(type: ItemCell.self, bundle: shopBundle)
+        itemTableView.registerCell(type: ItemCell.self, bundle: Bundle(for: type(of: self)))
     }
 
     public init() {
-        super.init(nibName: "ShopViewController", bundle: shopBundle)
+        super.init(nibName: String(describing: ShopViewController.self), bundle: Bundle(for: type(of: self)))
     }
     
     required init?(coder: NSCoder) {
@@ -51,4 +49,11 @@ extension ShopViewController: UITableViewDelegate, UITableViewDataSource {
         cell.item = items[indexPath.row]
         return cell
     }
+    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ItemDetailViewController()
+        vc.item = self.items[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

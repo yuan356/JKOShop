@@ -8,6 +8,7 @@
 import Foundation
 
 public struct ItemModel: Decodable {
+    public let id: Int
     public let title: String
     public let desc: String
     public let amount: Double
