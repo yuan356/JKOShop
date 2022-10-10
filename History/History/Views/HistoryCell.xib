@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="HistoryCell" customModule="History" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="122"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6S3-au-qDe">
+                        <rect key="frame" x="12" y="5" width="305" height="114"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4w5-bw-hwJ">
+                                <rect key="frame" x="12" y="8" width="64" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU9-g7-3Gx">
+                                <rect key="frame" x="252" y="84" width="45" height="22"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5CZ-El-wuz">
+                                <rect key="frame" x="12" y="34" width="203" height="54"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4w5-bw-hwJ" firstAttribute="leading" secondItem="6S3-au-qDe" secondAttribute="leading" constant="12" id="4VI-kI-Fm2"/>
+                            <constraint firstItem="4w5-bw-hwJ" firstAttribute="top" secondItem="6S3-au-qDe" secondAttribute="top" constant="8" id="ItN-u2-2Zq"/>
+                            <constraint firstAttribute="trailing" secondItem="KU9-g7-3Gx" secondAttribute="trailing" constant="8" id="oZt-5p-BR0"/>
+                            <constraint firstAttribute="bottom" secondItem="5CZ-El-wuz" secondAttribute="bottom" constant="26" id="pWa-hM-Net"/>
+                            <constraint firstAttribute="bottom" secondItem="KU9-g7-3Gx" secondAttribute="bottom" constant="8" id="sOS-4a-687"/>
+                            <constraint firstItem="5CZ-El-wuz" firstAttribute="leading" secondItem="4w5-bw-hwJ" secondAttribute="leading" id="wlS-vO-I9j"/>
+                            <constraint firstItem="5CZ-El-wuz" firstAttribute="top" secondItem="4w5-bw-hwJ" secondAttribute="bottom" constant="8" id="wlk-Re-80R"/>
+                            <constraint firstAttribute="trailing" secondItem="5CZ-El-wuz" secondAttribute="trailing" constant="90" id="zlO-A9-uDt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6S3-au-qDe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="CCv-Z0-v6G"/>
+                    <constraint firstAttribute="bottom" secondItem="6S3-au-qDe" secondAttribute="bottom" constant="3" id="ai1-Lv-xS6"/>
+                    <constraint firstAttribute="trailing" secondItem="6S3-au-qDe" secondAttribute="trailing" constant="12" id="j3I-Rb-2sh"/>
+                    <constraint firstItem="6S3-au-qDe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ndy-z2-xEc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="amountLabel" destination="KU9-g7-3Gx" id="uLK-E3-PTw"/>
+                <outlet property="dateLabel" destination="4w5-bw-hwJ" id="pg9-rA-Uid"/>
+                <outlet property="innerView" destination="6S3-au-qDe" id="V1T-8b-hT7"/>
+                <outlet property="titleStackView" destination="5CZ-El-wuz" id="gte-aG-Zrh"/>
+            </connections>
+            <point key="canvasLocation" x="135.50724637681159" y="123.88392857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

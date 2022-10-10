@@ -21,8 +21,11 @@ class JKSTabBarController: UITabBarController {
         let cartBarItem = UITabBarItem(title: "購物車", image: UIImage(systemName: "cart"), selectedImage: UIImage(named: "cart.fill"))
         cartVC.tabBarItem = cartBarItem
         
+        let historyVC = UINavigationController(rootViewController: HistoryViewController())
+        let historyBarItem = UITabBarItem(title: "歷史紀錄", image: UIImage(systemName: "clock"), selectedImage: UIImage(named: "clock.fill"))
+        historyVC.tabBarItem = historyBarItem
         
         self.tabBar.tintColor = UIColor(named: "JKORed")
-        self.viewControllers = [shopVC, cartVC]
+        self.viewControllers = [shopVC, cartVC, historyVC]
     }
 }

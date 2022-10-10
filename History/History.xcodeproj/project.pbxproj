@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C9A429028F3FD4800C54A6F /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A428F28F3FD4800C54A6F /* OrderViewModel.swift */; };
-		1CF1A8F528F2C294005FD2B2 /* ViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF1A8F328F2C294005FD2B2 /* ViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CF1A8FD28F2C2C5005FD2B2 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A8FC28F2C2C5005FD2B2 /* ItemViewModel.swift */; };
-		1CF1A90228F2C2D1005FD2B2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A90128F2C2D1005FD2B2 /* Observable.swift */; };
-		1CF1A91428F2C902005FD2B2 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A91328F2C902005FD2B2 /* CartViewModel.swift */; };
+		1C9A427528F3FA6500C54A6F /* History.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9A427328F3FA6500C54A6F /* History.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C9A428328F3FAA100C54A6F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A428128F3FAA100C54A6F /* HistoryViewController.swift */; };
+		1C9A428428F3FAA100C54A6F /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A428228F3FAA100C54A6F /* HistoryViewController.xib */; };
+		1C9A428928F3FB5100C54A6F /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A428728F3FB5100C54A6F /* HistoryCell.swift */; };
+		1C9A428A28F3FB5100C54A6F /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A428828F3FB5100C54A6F /* HistoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C9A428F28F3FD4800C54A6F /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
-		1CF1A8F028F2C294005FD2B2 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CF1A8F328F2C294005FD2B2 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
-		1CF1A8F428F2C294005FD2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CF1A8FC28F2C2C5005FD2B2 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
-		1CF1A90128F2C2D1005FD2B2 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
-		1CF1A91328F2C902005FD2B2 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		1C9A427028F3FA6500C54A6F /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C9A427328F3FA6500C54A6F /* History.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = History.h; sourceTree = "<group>"; };
+		1C9A427428F3FA6500C54A6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C9A428128F3FAA100C54A6F /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		1C9A428228F3FAA100C54A6F /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		1C9A428728F3FB5100C54A6F /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		1C9A428828F3FB5100C54A6F /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1CF1A8ED28F2C294005FD2B2 /* Frameworks */ = {
+		1C9A426D28F3FA6500C54A6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,81 +35,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CF1A8E628F2C294005FD2B2 = {
+		1C9A426628F3FA6500C54A6F = {
 			isa = PBXGroup;
 			children = (
-				1CF1A8F228F2C294005FD2B2 /* ViewModel */,
-				1CF1A8F128F2C294005FD2B2 /* Products */,
+				1C9A427228F3FA6500C54A6F /* History */,
+				1C9A427128F3FA6500C54A6F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1CF1A8F128F2C294005FD2B2 /* Products */ = {
+		1C9A427128F3FA6500C54A6F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1CF1A8F028F2C294005FD2B2 /* ViewModel.framework */,
+				1C9A427028F3FA6500C54A6F /* History.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1CF1A8F228F2C294005FD2B2 /* ViewModel */ = {
+		1C9A427228F3FA6500C54A6F /* History */ = {
 			isa = PBXGroup;
 			children = (
-				1CF1A90128F2C2D1005FD2B2 /* Observable.swift */,
-				1CF1A8FC28F2C2C5005FD2B2 /* ItemViewModel.swift */,
-				1CF1A91328F2C902005FD2B2 /* CartViewModel.swift */,
-				1C9A428F28F3FD4800C54A6F /* OrderViewModel.swift */,
-				1CF1A8F328F2C294005FD2B2 /* ViewModel.h */,
-				1CF1A8F428F2C294005FD2B2 /* Info.plist */,
+				1C9A428628F3FB3700C54A6F /* Views */,
+				1C9A427C28F3FA7200C54A6F /* ViewController */,
+				1C9A427328F3FA6500C54A6F /* History.h */,
+				1C9A427428F3FA6500C54A6F /* Info.plist */,
 			);
-			path = ViewModel;
+			path = History;
+			sourceTree = "<group>";
+		};
+		1C9A427C28F3FA7200C54A6F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A428128F3FAA100C54A6F /* HistoryViewController.swift */,
+				1C9A428228F3FAA100C54A6F /* HistoryViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C9A428628F3FB3700C54A6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A428728F3FB5100C54A6F /* HistoryCell.swift */,
+				1C9A428828F3FB5100C54A6F /* HistoryCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1CF1A8EB28F2C294005FD2B2 /* Headers */ = {
+		1C9A426B28F3FA6500C54A6F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF1A8F528F2C294005FD2B2 /* ViewModel.h in Headers */,
+				1C9A427528F3FA6500C54A6F /* History.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1CF1A8EF28F2C294005FD2B2 /* ViewModel */ = {
+		1C9A426F28F3FA6500C54A6F /* History */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1CF1A8F828F2C294005FD2B2 /* Build configuration list for PBXNativeTarget "ViewModel" */;
+			buildConfigurationList = 1C9A427828F3FA6500C54A6F /* Build configuration list for PBXNativeTarget "History" */;
 			buildPhases = (
-				1CF1A8EB28F2C294005FD2B2 /* Headers */,
-				1CF1A8EC28F2C294005FD2B2 /* Sources */,
-				1CF1A8ED28F2C294005FD2B2 /* Frameworks */,
-				1CF1A8EE28F2C294005FD2B2 /* Resources */,
+				1C9A426B28F3FA6500C54A6F /* Headers */,
+				1C9A426C28F3FA6500C54A6F /* Sources */,
+				1C9A426D28F3FA6500C54A6F /* Frameworks */,
+				1C9A426E28F3FA6500C54A6F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ViewModel;
-			productName = ViewModel;
-			productReference = 1CF1A8F028F2C294005FD2B2 /* ViewModel.framework */;
+			name = History;
+			productName = History;
+			productReference = 1C9A427028F3FA6500C54A6F /* History.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1CF1A8E728F2C294005FD2B2 /* Project object */ = {
+		1C9A426728F3FA6500C54A6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					1CF1A8EF28F2C294005FD2B2 = {
+					1C9A426F28F3FA6500C54A6F = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
-			buildConfigurationList = 1CF1A8EA28F2C294005FD2B2 /* Build configuration list for PBXProject "ViewModel" */;
+			buildConfigurationList = 1C9A426A28F3FA6500C54A6F /* Build configuration list for PBXProject "History" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,42 +134,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 1CF1A8E628F2C294005FD2B2;
-			productRefGroup = 1CF1A8F128F2C294005FD2B2 /* Products */;
+			mainGroup = 1C9A426628F3FA6500C54A6F;
+			productRefGroup = 1C9A427128F3FA6500C54A6F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CF1A8EF28F2C294005FD2B2 /* ViewModel */,
+				1C9A426F28F3FA6500C54A6F /* History */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1CF1A8EE28F2C294005FD2B2 /* Resources */ = {
+		1C9A426E28F3FA6500C54A6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9A428A28F3FB5100C54A6F /* HistoryCell.xib in Resources */,
+				1C9A428428F3FAA100C54A6F /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1CF1A8EC28F2C294005FD2B2 /* Sources */ = {
+		1C9A426C28F3FA6500C54A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CF1A91428F2C902005FD2B2 /* CartViewModel.swift in Sources */,
-				1CF1A90228F2C2D1005FD2B2 /* Observable.swift in Sources */,
-				1CF1A8FD28F2C2C5005FD2B2 /* ItemViewModel.swift in Sources */,
-				1C9A429028F3FD4800C54A6F /* OrderViewModel.swift in Sources */,
+				1C9A428928F3FB5100C54A6F /* HistoryCell.swift in Sources */,
+				1C9A428328F3FAA100C54A6F /* HistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1CF1A8F628F2C294005FD2B2 /* Debug */ = {
+		1C9A427628F3FA6500C54A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		1CF1A8F728F2C294005FD2B2 /* Release */ = {
+		1C9A427728F3FA6500C54A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,47 +291,50 @@
 			};
 			name = Release;
 		};
-		1CF1A8F928F2C294005FD2B2 /* Debug */ = {
+		1C9A427928F3FA6500C54A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 93H5743QJF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewModel/Info.plist;
+				INFOPLIST_FILE = History/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.willchen.ViewModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willchen.History;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1CF1A8FA28F2C294005FD2B2 /* Release */ = {
+		1C9A427A28F3FA6500C54A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 93H5743QJF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewModel/Info.plist;
+				INFOPLIST_FILE = History/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.willchen.ViewModel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willchen.History;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,25 +345,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1CF1A8EA28F2C294005FD2B2 /* Build configuration list for PBXProject "ViewModel" */ = {
+		1C9A426A28F3FA6500C54A6F /* Build configuration list for PBXProject "History" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CF1A8F628F2C294005FD2B2 /* Debug */,
-				1CF1A8F728F2C294005FD2B2 /* Release */,
+				1C9A427628F3FA6500C54A6F /* Debug */,
+				1C9A427728F3FA6500C54A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CF1A8F828F2C294005FD2B2 /* Build configuration list for PBXNativeTarget "ViewModel" */ = {
+		1C9A427828F3FA6500C54A6F /* Build configuration list for PBXNativeTarget "History" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1CF1A8F928F2C294005FD2B2 /* Debug */,
-				1CF1A8FA28F2C294005FD2B2 /* Release */,
+				1C9A427928F3FA6500C54A6F /* Debug */,
+				1C9A427A28F3FA6500C54A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1CF1A8E728F2C294005FD2B2 /* Project object */;
+	rootObject = 1C9A426728F3FA6500C54A6F /* Project object */;
 }

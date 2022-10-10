@@ -32,10 +32,8 @@ public class CartService {
     }
     
     public func clean(closedItems: [CartItemModel]) {
-        for (i, cartItem) in cartItems.enumerated() {
-            if closedItems.contains(where: { $0.item.id == cartItem.item.id }) {
-                _cartItems.remove(at: i)
-            }
+        _cartItems.removeAll { (cartItem) -> Bool in
+            closedItems.contains(where: { $0.item.id == cartItem.item.id })
         }
     }
 }

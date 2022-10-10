@@ -18,6 +18,9 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:History/History.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Payment/Payment.xcodeproj">
       </FileRef>
       <FileRef
