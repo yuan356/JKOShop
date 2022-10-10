@@ -9,6 +9,7 @@ import UIKit
 import Models
 import ViewModel
 import Helper
+import Payment
 
 class ItemDetailViewController: JKSViewController {
 
@@ -58,7 +59,9 @@ extension ItemDetailViewController {
     }
     
     @IBAction func buyNowClicked(_ sender: Any) {
-        
+        let vc = PaymentViewController()
+        vc.cartItems = [CartItemModel(item: item)]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

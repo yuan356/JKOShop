@@ -14,11 +14,14 @@ import Payment
 public class CartViewController: JKSViewController, HasTableView {
 
     @IBOutlet private weak var cartTableView: UITableView!
-    @IBOutlet weak var checkoutBtn: UIView!
+    @IBOutlet weak var checkoutBtnView: UIView!
+    @IBOutlet weak var checkoutButton: UIButton!
     private var cartViewModel = CartViewModel()
     
     private var cartItems: [CartItemModel] {
-        return cartViewModel.cartItems.value ?? []
+        get {
+            return cartViewModel.cartItems.value ?? []
+        }
     }
     
     private var checkedItemsId: [Int] = []
@@ -32,11 +35,18 @@ public class CartViewController: JKSViewController, HasTableView {
     public override func setupViewModel() {
         cartViewModel.cartItems.bind { [weak self] (cartitems) in
             self?.cartTableView.reloadData()
+            self?.setButtonStyle()
         }
     }
     
     public override func setupUI() {
-        checkoutBtn.layer.cornerRadius = 5
+        checkoutBtnView.layer.cornerRadius = 5
+    }
+    
+    private func setButtonStyle() {
+        let enable = cartItems.count > 0 && checkedItemsId.count > 0
+        checkoutBtnView.alpha = enable ? 1 : 0.4
+        checkoutButton.isEnabled = enable ? true : false
     }
     
     public func setupTableView() {
@@ -47,6 +57,7 @@ public class CartViewController: JKSViewController, HasTableView {
     
     public override func viewWillAppear(_ animated: Bool) {
         cartViewModel.getCartItems()
+        checkedItemsId.removeAll()
     }
     
     @IBAction func checkoutBtnClicked(_ sender: Any) {
@@ -83,6 +94,7 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
                 checkedItemsId.append(cartItemId)
                 cell.itemSelected = true
             }
+            setButtonStyle()
         }
     }
     

@@ -14,7 +14,7 @@ class ItemDetailView: XibBaseView {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var amountLabel: UILabel!
     @IBOutlet private weak var countLabel: UILabel!
-    @IBOutlet weak var innerView: UIView!
+    @IBOutlet private weak var innerView: UIView!
     
     var cartItem: CartItemModel! {
         didSet {
@@ -24,8 +24,8 @@ class ItemDetailView: XibBaseView {
         }
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func customUI() {
         innerView.layer.cornerRadius = 8
     }
+
 }

@@ -11,12 +11,15 @@ open class XibBaseView: UIView {
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.initXibView()
+        customUI()
     }
 
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
         self.initXibView()
     }
+    
+    open func customUI() {}
 }
 
 extension UIView {

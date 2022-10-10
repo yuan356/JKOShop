@@ -12,7 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CartViewController" customModule="Cart" customModuleProvider="target">
             <connections>
                 <outlet property="cartTableView" destination="tTL-f2-11L" id="vAZ-Mv-U8N"/>
-                <outlet property="checkoutBtn" destination="6RO-Oc-46d" id="af3-hS-6pM"/>
+                <outlet property="checkoutBtnView" destination="6RO-Oc-46d" id="OIO-1X-XCE"/>
+                <outlet property="checkoutButton" destination="j5B-0N-tZs" id="DhZ-Y4-oKN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
