@@ -14,11 +14,11 @@ class JKSTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let shopVC = UINavigationController(rootViewController: ShopViewController())
-        let shopBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
+        let shopBarItem = UITabBarItem(title: "商品列表", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
         shopVC.tabBarItem = shopBarItem
         
         let cartVC = UINavigationController(rootViewController: CartViewController())
-        let cartBarItem = UITabBarItem(title: "Cart", image: UIImage(systemName: "cart"), selectedImage: UIImage(named: "cart.fill"))
+        let cartBarItem = UITabBarItem(title: "購物車", image: UIImage(systemName: "cart"), selectedImage: UIImage(named: "cart.fill"))
         cartVC.tabBarItem = cartBarItem
         
         

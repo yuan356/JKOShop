@@ -6,24 +6,56 @@
 //
 
 import UIKit
+import Helper
+import Models
+import Service
 
-class PaymentViewController: UIViewController {
+public class PaymentViewController: JKSViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var buyBtn: UIView!
+    @IBOutlet weak var itemStackView: UIStackView!
+    @IBOutlet weak var amountLabel: UILabel!
+    
+    public var cartItems: [CartItemModel]!
+    
+    override public func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "結算訂單"
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    public override func setupUI() {
+        buyBtn.layer.cornerRadius = 5
+        var total = 0
+        
+        for item in cartItems {
+            let view = ItemDetailView()
+            view.cartItem = item
+            itemStackView.addArrangedSubview(view)
+            total += item.totalAmount
+        }
+        amountLabel.text = "$\(total)"
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buyBtnClicked(_ sender: Any) {
+        
+        OrderService.shared.createOrder(items: cartItems)
+        
+        let controller = UIAlertController(title: "成功提交訂單", message: "", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+        controller.addAction(okAction)
+        present(controller, animated: true, completion: nil)
     }
-    */
-
+    
 }

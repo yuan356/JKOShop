@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9A423E28F3D89C00C54A6F /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A423D28F3D89C00C54A6F /* ItemDetailView.swift */; };
+		1C9A426228F3D96800C54A6F /* ItemDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A426128F3D96800C54A6F /* ItemDetailView.xib */; };
 		1CF1A93328F3043F005FD2B2 /* Payment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF1A93128F3043F005FD2B2 /* Payment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF1A94028F3049C005FD2B2 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A93E28F3049C005FD2B2 /* PaymentViewController.swift */; };
 		1CF1A94128F3049C005FD2B2 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1A93F28F3049C005FD2B2 /* PaymentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C9A423D28F3D89C00C54A6F /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		1C9A426128F3D96800C54A6F /* ItemDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailView.xib; sourceTree = "<group>"; };
 		1CF1A92E28F3043F005FD2B2 /* Payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF1A93128F3043F005FD2B2 /* Payment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
 		1CF1A93228F3043F005FD2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +35,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9A423028F3D72100C54A6F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A423D28F3D89C00C54A6F /* ItemDetailView.swift */,
+				1C9A426128F3D96800C54A6F /* ItemDetailView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1CF1A92428F3043F005FD2B2 = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +63,7 @@
 		1CF1A93028F3043F005FD2B2 /* Payment */ = {
 			isa = PBXGroup;
 			children = (
+				1C9A423028F3D72100C54A6F /* Views */,
 				1CF1A93D28F30466005FD2B2 /* PaymentViewController */,
 				1CF1A93128F3043F005FD2B2 /* Payment.h */,
 				1CF1A93228F3043F005FD2B2 /* Info.plist */,
@@ -135,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9A426228F3D96800C54A6F /* ItemDetailView.xib in Resources */,
 				1CF1A94128F3049C005FD2B2 /* PaymentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9A423E28F3D89C00C54A6F /* ItemDetailView.swift in Sources */,
 				1CF1A94028F3049C005FD2B2 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

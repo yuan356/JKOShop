@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9A423628F3D79B00C54A6F /* UIView+anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A423528F3D79B00C54A6F /* UIView+anchors.swift */; };
+		1C9A423928F3D87300C54A6F /* XibBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A423828F3D87300C54A6F /* XibBaseView.swift */; };
 		1CF1A86028F29E92005FD2B2 /* Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF1A85E28F29E92005FD2B2 /* Helper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1CF1A87928F29F53005FD2B2 /* JKSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A87828F29F53005FD2B2 /* JKSViewController.swift */; };
 		1CF1A87E28F2A26D005FD2B2 /* UITableView+reuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A86F28F29ECC005FD2B2 /* UITableView+reuseCell.swift */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C9A423528F3D79B00C54A6F /* UIView+anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+anchors.swift"; sourceTree = "<group>"; };
+		1C9A423828F3D87300C54A6F /* XibBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibBaseView.swift; sourceTree = "<group>"; };
 		1CF1A85B28F29E92005FD2B2 /* Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF1A85E28F29E92005FD2B2 /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
 		1CF1A85F28F29E92005FD2B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 				1CF1A87128F29ECC005FD2B2 /* ReuseCell */,
 				1CF1A85E28F29E92005FD2B2 /* Helper.h */,
 				1CF1A85F28F29E92005FD2B2 /* Info.plist */,
+				1C9A423828F3D87300C54A6F /* XibBaseView.swift */,
+				1C9A423528F3D79B00C54A6F /* UIView+anchors.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF1A87E28F2A26D005FD2B2 /* UITableView+reuseCell.swift in Sources */,
+				1C9A423628F3D79B00C54A6F /* UIView+anchors.swift in Sources */,
+				1C9A423928F3D87300C54A6F /* XibBaseView.swift in Sources */,
 				1CF1A87928F29F53005FD2B2 /* JKSViewController.swift in Sources */,
 				1CF1A88028F2A270005FD2B2 /* LoadFile.swift in Sources */,
 			);

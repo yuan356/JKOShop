@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemDetailView" customModule="Payment" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="HBG-Yp-ayf" id="bs4-rE-RNx"/>
+                <outlet property="countLabel" destination="QAn-Cl-g5b" id="7zc-cR-nwz"/>
+                <outlet property="titleLabel" destination="adY-Cd-eAu" id="n86-19-Tf2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdp-tU-pzO" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adY-Cd-eAu">
+                            <rect key="frame" x="16" y="9.5" width="134" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBG-Yp-ayf">
+                            <rect key="frame" x="203" y="9.5" width="31" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="x1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-Cl-g5b">
+                            <rect key="frame" x="179.5" y="10.5" width="15.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="HBG-Yp-ayf" firstAttribute="leading" secondItem="QAn-Cl-g5b" secondAttribute="trailing" constant="8" id="CRk-EV-rln"/>
+                        <constraint firstItem="HBG-Yp-ayf" firstAttribute="centerY" secondItem="Vdp-tU-pzO" secondAttribute="centerY" id="Kwc-5O-HpW"/>
+                        <constraint firstItem="QAn-Cl-g5b" firstAttribute="centerY" secondItem="HBG-Yp-ayf" secondAttribute="centerY" id="L70-NL-VEP"/>
+                        <constraint firstItem="adY-Cd-eAu" firstAttribute="centerY" secondItem="Vdp-tU-pzO" secondAttribute="centerY" id="MaS-TA-jEn"/>
+                        <constraint firstAttribute="trailing" secondItem="adY-Cd-eAu" secondAttribute="trailing" constant="100" id="cfC-fN-j12"/>
+                        <constraint firstAttribute="height" constant="40" id="e9C-R7-cFs"/>
+                        <constraint firstItem="adY-Cd-eAu" firstAttribute="leading" secondItem="Vdp-tU-pzO" secondAttribute="leading" constant="16" id="ipw-if-nLo"/>
+                        <constraint firstAttribute="trailing" secondItem="HBG-Yp-ayf" secondAttribute="trailing" constant="16" id="m82-W8-zEz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vdp-tU-pzO" secondAttribute="bottom" id="6E9-n0-aak"/>
+                <constraint firstItem="Vdp-tU-pzO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DxO-ZP-FkU"/>
+                <constraint firstAttribute="trailing" secondItem="Vdp-tU-pzO" secondAttribute="trailing" id="Jmr-fy-SuF"/>
+                <constraint firstItem="Vdp-tU-pzO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c7f-Rt-KEF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="43.478260869565219" y="-194.86607142857142"/>
+        </view>
+    </objects>
+</document>

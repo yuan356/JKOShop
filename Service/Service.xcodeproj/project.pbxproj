@@ -12,6 +12,7 @@
 		1C51DE2C28F28BDF00801A7E /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DE2B28F28BDF00801A7E /* Models.framework */; };
 		1C51DE2D28F28BDF00801A7E /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C51DE2B28F28BDF00801A7E /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C51DE3928F28E6C00801A7E /* ItemsData.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DE3828F28E6B00801A7E /* ItemsData.json */; };
+		1C9A426528F3F50100C54A6F /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A426428F3F50100C54A6F /* OrderService.swift */; };
 		1CF1A91228F2C8D7005FD2B2 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A91128F2C8D7005FD2B2 /* CartService.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		1C51DE2428F28B8500801A7E /* ItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
 		1C51DE2B28F28BDF00801A7E /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C51DE3828F28E6B00801A7E /* ItemsData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ItemsData.json; sourceTree = "<group>"; };
+		1C9A426428F3F50100C54A6F /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		1CF1A91128F2C8D7005FD2B2 /* CartService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +76,7 @@
 				1C51DE3828F28E6B00801A7E /* ItemsData.json */,
 				1C51DE2328F28B4200801A7E /* SupportingFiles */,
 				1CF1A91128F2C8D7005FD2B2 /* CartService.swift */,
+				1C9A426428F3F50100C54A6F /* OrderService.swift */,
 				1C51DE2428F28B8500801A7E /* ItemService.swift */,
 			);
 			path = Service;
@@ -179,6 +182,7 @@
 			files = (
 				1C51DE2528F28B8500801A7E /* ItemService.swift in Sources */,
 				1CF1A91228F2C8D7005FD2B2 /* CartService.swift in Sources */,
+				1C9A426528F3F50100C54A6F /* OrderService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ import UIKit
 import Models
 import ViewModel
 import Helper
+import Payment
 
 public class CartViewController: JKSViewController, HasTableView {
 
@@ -49,6 +50,12 @@ public class CartViewController: JKSViewController, HasTableView {
     }
     
     @IBAction func checkoutBtnClicked(_ sender: Any) {
+        let orderItems = cartItems.filter { (item) -> Bool in
+            return checkedItemsId.contains(item.item.id)
+        }
+        let vc = PaymentViewController()
+        vc.cartItems = orderItems
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
