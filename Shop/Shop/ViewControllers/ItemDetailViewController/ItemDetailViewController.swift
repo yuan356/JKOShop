@@ -8,8 +8,9 @@
 import UIKit
 import Models
 import ViewModel
+import Helper
 
-class ItemDetailViewController: UIViewController {
+class ItemDetailViewController: JKSViewController {
 
     @IBOutlet private weak var itemImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,14 +22,6 @@ class ItemDetailViewController: UIViewController {
     var item: ItemModel!
     
     var cartViewModel = CartViewModel()
-    
-    public init() {
-        super.init(nibName: String(describing: ItemDetailViewController.self), bundle: Bundle(for: type(of: self)))
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +37,7 @@ class ItemDetailViewController: UIViewController {
         amountLabel.text = amountLabel.text
     }
     
-    private func setupUI() {
+    override func setupUI() {
         addCartBtnView.layer.cornerRadius = 5
         buyBtnView.layer.cornerRadius = 5
     }

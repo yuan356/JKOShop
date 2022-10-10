@@ -18,6 +18,9 @@
       location = "container:"
       name = "Features">
       <FileRef
+         location = "group:Payment/Payment.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Cart/Cart.xcodeproj">
       </FileRef>
       <FileRef

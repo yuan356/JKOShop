@@ -11,7 +11,7 @@ import Helper
 import Models
 import ViewModel
 
-public class ShopViewController: UIViewController {
+public class ShopViewController: JKSViewController, HasTableView {
 
     @IBOutlet weak var itemTableView: UITableView!
         
@@ -31,20 +31,13 @@ public class ShopViewController: UIViewController {
         setupTableView()
     }
     
-    private func setupTableView() {
+    public func setupTableView() {
         itemTableView.backgroundColor = UIColor(red: 241/255, green: 241/255, blue: 241/255, alpha: 1)
         itemTableView.delegate = self
         itemTableView.dataSource = self
         itemTableView.registerCell(type: ItemCell.self, bundle: Bundle(for: type(of: self)))
     }
-
-    public init() {
-        super.init(nibName: String(describing: ShopViewController.self), bundle: Bundle(for: type(of: self)))
-    }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 }
 
 extension ShopViewController: UITableViewDelegate, UITableViewDataSource {

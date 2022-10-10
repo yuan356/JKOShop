@@ -17,7 +17,7 @@ class JKSTabBarController: UITabBarController {
         let shopBarItem = UITabBarItem(title: "Shop", image: UIImage(systemName: "gift"), selectedImage: UIImage(named: "gift.fill"))
         shopVC.tabBarItem = shopBarItem
         
-        let cartVC = CartViewController()
+        let cartVC = UINavigationController(rootViewController: CartViewController())
         let cartBarItem = UITabBarItem(title: "Cart", image: UIImage(systemName: "cart"), selectedImage: UIImage(named: "cart.fill"))
         cartVC.tabBarItem = cartBarItem
         

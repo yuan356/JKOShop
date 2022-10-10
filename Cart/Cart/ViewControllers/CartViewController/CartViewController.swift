@@ -10,10 +10,10 @@ import Models
 import ViewModel
 import Helper
 
-public class CartViewController: UIViewController {
-    
+public class CartViewController: JKSViewController, HasTableView {
+
     @IBOutlet private weak var cartTableView: UITableView!
-    
+    @IBOutlet weak var checkoutBtn: UIView!
     private var cartViewModel = CartViewModel()
     
     private var cartItems: [CartItemModel] {
@@ -24,25 +24,31 @@ public class CartViewController: UIViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        cartTableView.registerCell(type: CartItemCell.self, bundle: Bundle(for: type(of: self)))
-        cartTableView.delegate = self
-        cartTableView.dataSource = self
-        
+        title = "購物車"
+        setupTableView()
+    }
+    
+    public override func setupViewModel() {
         cartViewModel.cartItems.bind { [weak self] (cartitems) in
             self?.cartTableView.reloadData()
         }
+    }
+    
+    public override func setupUI() {
+        checkoutBtn.layer.cornerRadius = 5
+    }
+    
+    public func setupTableView() {
+        cartTableView.registerCell(type: CartItemCell.self, bundle: Bundle(for: type(of: self)))
+        cartTableView.delegate = self
+        cartTableView.dataSource = self
     }
     
     public override func viewWillAppear(_ animated: Bool) {
         cartViewModel.getCartItems()
     }
     
-    public init() {
-        super.init(nibName: String(describing: CartViewController.self), bundle: Bundle(for: type(of: self)))
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    @IBAction func checkoutBtnClicked(_ sender: Any) {
     }
     
 }
