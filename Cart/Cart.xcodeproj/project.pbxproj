@@ -12,7 +12,32 @@
 		1CF1A8DD28F2C020005FD2B2 /* CartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1A8DB28F2C020005FD2B2 /* CartViewController.xib */; };
 		1CF1A91D28F2D517005FD2B2 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A91B28F2D517005FD2B2 /* CartItemCell.swift */; };
 		1CF1A91E28F2D517005FD2B2 /* CartItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1A91C28F2D517005FD2B2 /* CartItemCell.xib */; };
+		E5AF5D8E28F57C50009C729B /* Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8A28F57C50009C729B /* Helper.framework */; };
+		E5AF5D8F28F57C50009C729B /* Helper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8A28F57C50009C729B /* Helper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D9028F57C50009C729B /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8B28F57C50009C729B /* Models.framework */; };
+		E5AF5D9128F57C50009C729B /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8B28F57C50009C729B /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D9228F57C50009C729B /* Payment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8C28F57C50009C729B /* Payment.framework */; };
+		E5AF5D9328F57C50009C729B /* Payment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8C28F57C50009C729B /* Payment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D9428F57C50009C729B /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8D28F57C50009C729B /* ViewModel.framework */; };
+		E5AF5D9528F57C50009C729B /* ViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D8D28F57C50009C729B /* ViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5AF5D9628F57C51009C729B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5AF5D9328F57C50009C729B /* Payment.framework in Embed Frameworks */,
+				E5AF5D9128F57C50009C729B /* Models.framework in Embed Frameworks */,
+				E5AF5D8F28F57C50009C729B /* Helper.framework in Embed Frameworks */,
+				E5AF5D9528F57C50009C729B /* ViewModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1CF1A8CB28F2BF80005FD2B2 /* Cart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,10 @@
 		1CF1A8DB28F2C020005FD2B2 /* CartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartViewController.xib; sourceTree = "<group>"; };
 		1CF1A91B28F2D517005FD2B2 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
 		1CF1A91C28F2D517005FD2B2 /* CartItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartItemCell.xib; sourceTree = "<group>"; };
+		E5AF5D8A28F57C50009C729B /* Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D8B28F57C50009C729B /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D8C28F57C50009C729B /* Payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D8D28F57C50009C729B /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF5D9228F57C50009C729B /* Payment.framework in Frameworks */,
+				E5AF5D9028F57C50009C729B /* Models.framework in Frameworks */,
+				E5AF5D8E28F57C50009C729B /* Helper.framework in Frameworks */,
+				E5AF5D9428F57C50009C729B /* ViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,7 @@
 			children = (
 				1CF1A8CD28F2BF80005FD2B2 /* Cart */,
 				1CF1A8CC28F2BF80005FD2B2 /* Products */,
+				E5AF5D8928F57C50009C729B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +138,17 @@
 			path = CartItemCell;
 			sourceTree = "<group>";
 		};
+		E5AF5D8928F57C50009C729B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AF5D8A28F57C50009C729B /* Helper.framework */,
+				E5AF5D8B28F57C50009C729B /* Models.framework */,
+				E5AF5D8C28F57C50009C729B /* Payment.framework */,
+				E5AF5D8D28F57C50009C729B /* ViewModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -126,6 +171,7 @@
 				1CF1A8C728F2BF80005FD2B2 /* Sources */,
 				1CF1A8C828F2BF80005FD2B2 /* Frameworks */,
 				1CF1A8C928F2BF80005FD2B2 /* Resources */,
+				E5AF5D9628F57C51009C729B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

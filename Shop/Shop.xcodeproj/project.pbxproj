@@ -14,7 +14,35 @@
 		1C51DE5B28F2912100801A7E /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C51DE5928F2912100801A7E /* ItemCell.xib */; };
 		1CF1A8A328F2AEF7005FD2B2 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A8A128F2AEF7005FD2B2 /* ItemDetailViewController.swift */; };
 		1CF1A8A428F2AEF7005FD2B2 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF1A8A228F2AEF7005FD2B2 /* ItemDetailViewController.xib */; };
+		E5AF5D9C28F57C6A009C729B /* Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9728F57C6A009C729B /* Helper.framework */; };
+		E5AF5D9D28F57C6A009C729B /* Helper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9728F57C6A009C729B /* Helper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D9E28F57C6A009C729B /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9828F57C6A009C729B /* Models.framework */; };
+		E5AF5D9F28F57C6A009C729B /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9828F57C6A009C729B /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5DA028F57C6A009C729B /* Payment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9928F57C6A009C729B /* Payment.framework */; };
+		E5AF5DA128F57C6A009C729B /* Payment.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9928F57C6A009C729B /* Payment.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5DA228F57C6A009C729B /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9A28F57C6A009C729B /* Service.framework */; };
+		E5AF5DA328F57C6A009C729B /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9A28F57C6A009C729B /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5DA428F57C6A009C729B /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9B28F57C6A009C729B /* ViewModel.framework */; };
+		E5AF5DA528F57C6A009C729B /* ViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D9B28F57C6A009C729B /* ViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5AF5DA628F57C6A009C729B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5AF5DA128F57C6A009C729B /* Payment.framework in Embed Frameworks */,
+				E5AF5D9F28F57C6A009C729B /* Models.framework in Embed Frameworks */,
+				E5AF5DA328F57C6A009C729B /* Service.framework in Embed Frameworks */,
+				E5AF5DA528F57C6A009C729B /* ViewModel.framework in Embed Frameworks */,
+				E5AF5D9D28F57C6A009C729B /* Helper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C51DDC628F1CF5000801A7E /* Shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,6 +59,11 @@
 		1CF1A8A128F2AEF7005FD2B2 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		1CF1A8A228F2AEF7005FD2B2 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 		1CF1A90A28F2C348005FD2B2 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D9728F57C6A009C729B /* Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D9828F57C6A009C729B /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D9928F57C6A009C729B /* Payment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Payment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D9A28F57C6A009C729B /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D9B28F57C6A009C729B /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +71,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF5DA028F57C6A009C729B /* Payment.framework in Frameworks */,
+				E5AF5D9E28F57C6A009C729B /* Models.framework in Frameworks */,
+				E5AF5DA228F57C6A009C729B /* Service.framework in Frameworks */,
+				E5AF5DA428F57C6A009C729B /* ViewModel.framework in Frameworks */,
+				E5AF5D9C28F57C6A009C729B /* Helper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +130,11 @@
 		1C51DE2F28F28C6100801A7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5AF5D9728F57C6A009C729B /* Helper.framework */,
+				E5AF5D9828F57C6A009C729B /* Models.framework */,
+				E5AF5D9928F57C6A009C729B /* Payment.framework */,
+				E5AF5D9A28F57C6A009C729B /* Service.framework */,
+				E5AF5D9B28F57C6A009C729B /* ViewModel.framework */,
 				1CF1A90A28F2C348005FD2B2 /* ViewModel.framework */,
 				1CF1A87B28F2A241005FD2B2 /* Helper.framework */,
 				1CF1A87528F29EFE005FD2B2 /* Helper.framework */,
@@ -158,6 +201,7 @@
 				1C51DDC228F1CF5000801A7E /* Sources */,
 				1C51DDC328F1CF5000801A7E /* Frameworks */,
 				1C51DDC428F1CF5000801A7E /* Resources */,
+				E5AF5DA628F57C6A009C729B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

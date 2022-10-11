@@ -12,7 +12,29 @@
 		1C9A428428F3FAA100C54A6F /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A428228F3FAA100C54A6F /* HistoryViewController.xib */; };
 		1C9A428928F3FB5100C54A6F /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9A428728F3FB5100C54A6F /* HistoryCell.swift */; };
 		1C9A428A28F3FB5100C54A6F /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C9A428828F3FB5100C54A6F /* HistoryCell.xib */; };
+		E5AF5D7728F57C28009C729B /* Helper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7428F57C28009C729B /* Helper.framework */; };
+		E5AF5D7828F57C28009C729B /* Helper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7428F57C28009C729B /* Helper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D7928F57C28009C729B /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7528F57C28009C729B /* Models.framework */; };
+		E5AF5D7A28F57C28009C729B /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7528F57C28009C729B /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D7B28F57C28009C729B /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7628F57C28009C729B /* ViewModel.framework */; };
+		E5AF5D7C28F57C28009C729B /* ViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D7628F57C28009C729B /* ViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5AF5D7D28F57C28009C729B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5AF5D7A28F57C28009C729B /* Models.framework in Embed Frameworks */,
+				E5AF5D7828F57C28009C729B /* Helper.framework in Embed Frameworks */,
+				E5AF5D7C28F57C28009C729B /* ViewModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C9A427028F3FA6500C54A6F /* History.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = History.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +44,9 @@
 		1C9A428228F3FAA100C54A6F /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 		1C9A428728F3FB5100C54A6F /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		1C9A428828F3FB5100C54A6F /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		E5AF5D7428F57C28009C729B /* Helper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D7528F57C28009C729B /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D7628F57C28009C729B /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF5D7928F57C28009C729B /* Models.framework in Frameworks */,
+				E5AF5D7728F57C28009C729B /* Helper.framework in Frameworks */,
+				E5AF5D7B28F57C28009C729B /* ViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +68,7 @@
 			children = (
 				1C9A427228F3FA6500C54A6F /* History */,
 				1C9A427128F3FA6500C54A6F /* Products */,
+				E5AF5D7328F57C28009C729B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +109,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		E5AF5D7328F57C28009C729B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AF5D7428F57C28009C729B /* Helper.framework */,
+				E5AF5D7528F57C28009C729B /* Models.framework */,
+				E5AF5D7628F57C28009C729B /* ViewModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -102,6 +141,7 @@
 				1C9A426C28F3FA6500C54A6F /* Sources */,
 				1C9A426D28F3FA6500C54A6F /* Frameworks */,
 				1C9A426E28F3FA6500C54A6F /* Resources */,
+				E5AF5D7D28F57C28009C729B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

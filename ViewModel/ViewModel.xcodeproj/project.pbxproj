@@ -12,7 +12,26 @@
 		1CF1A8FD28F2C2C5005FD2B2 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A8FC28F2C2C5005FD2B2 /* ItemViewModel.swift */; };
 		1CF1A90228F2C2D1005FD2B2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A90128F2C2D1005FD2B2 /* Observable.swift */; };
 		1CF1A91428F2C902005FD2B2 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF1A91328F2C902005FD2B2 /* CartViewModel.swift */; };
+		E5AF5D6E28F57BF9009C729B /* Models.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D6C28F57BF9009C729B /* Models.framework */; };
+		E5AF5D6F28F57BF9009C729B /* Models.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D6C28F57BF9009C729B /* Models.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E5AF5D7028F57BF9009C729B /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D6D28F57BF9009C729B /* Service.framework */; };
+		E5AF5D7128F57BF9009C729B /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5AF5D6D28F57BF9009C729B /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E5AF5D7228F57BF9009C729B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E5AF5D7128F57BF9009C729B /* Service.framework in Embed Frameworks */,
+				E5AF5D6F28F57BF9009C729B /* Models.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C9A428F28F3FD4800C54A6F /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
@@ -22,6 +41,8 @@
 		1CF1A8FC28F2C2C5005FD2B2 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		1CF1A90128F2C2D1005FD2B2 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		1CF1A91328F2C902005FD2B2 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		E5AF5D6C28F57BF9009C729B /* Models.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Models.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5AF5D6D28F57BF9009C729B /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AF5D7028F57BF9009C729B /* Service.framework in Frameworks */,
+				E5AF5D6E28F57BF9009C729B /* Models.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,7 @@
 			children = (
 				1CF1A8F228F2C294005FD2B2 /* ViewModel */,
 				1CF1A8F128F2C294005FD2B2 /* Products */,
+				E5AF5D6B28F57BF9009C729B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +88,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E5AF5D6B28F57BF9009C729B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AF5D6C28F57BF9009C729B /* Models.framework */,
+				E5AF5D6D28F57BF9009C729B /* Service.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -86,6 +119,7 @@
 				1CF1A8EC28F2C294005FD2B2 /* Sources */,
 				1CF1A8ED28F2C294005FD2B2 /* Frameworks */,
 				1CF1A8EE28F2C294005FD2B2 /* Resources */,
+				E5AF5D7228F57BF9009C729B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
