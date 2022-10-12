@@ -18,3 +18,15 @@ public struct OrderModel {
         self.orderAmount = orderAmount
     }
 }
+
+public protocol Orderable {
+    func reorderObjects() -> Self
+}
+
+public typealias OrderList = [OrderModel]
+
+extension OrderList: Orderable {
+    public func reorderObjects() -> Self {
+        return self.sorted(by: { $0.createdTime > $1.createdTime })
+    }
+}

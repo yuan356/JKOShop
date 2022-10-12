@@ -10,12 +10,16 @@ import Models
 import Service
 
 public class OrderViewModel {
+    func reorderObjects(_ items: [AnyObject]) -> [AnyObject] {
+        return items.reversed()
+    }
     
     public var orderList: Observable<[OrderModel]> = Observable([])
 
     public func getOrderList() {
-        orderList.value = OrderService.shared.orderList
+        orderList.value = OrderService.shared.orderList.reorderObjects()
     }
     
     public init () {}
+
 }
