@@ -20,7 +20,7 @@ class ItemCell: UITableViewCell {
         didSet {
             titleLabel.text = item.title
             itemImage.image = UIImage(named: item.imageUrl)
-            amountLabel.text = "$\(item.amount)"
+            amountLabel.text = "$\(item.amount.toInt())"
             descLabel.text = item.desc
         }
     }

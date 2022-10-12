@@ -25,7 +25,7 @@ class HistoryCell: UITableViewCell {
                 titleLabel.text = item.item.title
                 titleStackView.addArrangedSubview(titleLabel)
             }
-            amountLabel.text = "$\(order.orderAmount)"
+            amountLabel.text = "$\(order.orderAmount.toInt())"
             dateLabel.text = order.createdTime
         }
     }
