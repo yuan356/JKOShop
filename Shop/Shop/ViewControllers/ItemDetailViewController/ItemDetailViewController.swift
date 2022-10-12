@@ -35,7 +35,7 @@ class ItemDetailViewController: JKSViewController {
         itemImage.image = UIImage(named: item.imageUrl)
         titleLabel.text = item.title
         descLabel.text = item.desc
-        amountLabel.text = amountLabel.text
+        amountLabel.text = "$\(item.amount.toInt())"
     }
     
     override func setupUI() {
