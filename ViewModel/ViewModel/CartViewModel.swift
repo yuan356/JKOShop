@@ -21,6 +21,11 @@ public class CartViewModel {
         cartItems.value = CartService.shared.cartItems
     }
     
+    public func deleteCartItems(cartItem: CartItemModel) {
+        CartService.shared.clean(closedItems: [cartItem])
+        cartItems.value = CartService.shared.cartItems
+    }
+    
     public init () {}
     
 }

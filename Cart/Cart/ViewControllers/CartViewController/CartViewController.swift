@@ -98,4 +98,15 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+          let item = self.cartItems[indexPath.row]
+          if let i = checkedItemsId.firstIndex(of: item.item.id) {
+              checkedItemsId.remove(at: i)
+          }
+          cartViewModel.deleteCartItems(cartItem: item)
+          self.cartTableView.deleteRows(at: [indexPath], with: .automatic)
+      }
+    }
+    
 }
