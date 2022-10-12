@@ -19,7 +19,7 @@ class ItemDetailView: XibBaseView {
     var cartItem: CartItemModel! {
         didSet {
             titleLabel.text = cartItem.item.title
-            amountLabel.text = "\(cartItem.totalAmount)"
+            amountLabel.text = "$\(cartItem.totalAmount)"
             countLabel.text = "x\(cartItem.count)"
         }
     }
